@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chennai Super Kings - Fan Hub</title>
+
+  <!-- Google Font: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="brand">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.xgBsMMDAtcZPeuF9dETxDgHaGG?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="CSK Logo" class="logo" />
+      <span class="brand-text">Chennai Super Kings</span>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#players">Players</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#news">News</a>
+      <a href="#stats">Stats</a>
+      <a href="#poll">Poll</a>
+      <a href="#forum">Forum</a>
+      <a href="#social">Social</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero" role="banner" aria-label="CSK Hero">
+    <div class="hero-overlay">
+      <h1>Whistle Podu! — CSK Fan Hub</h1>
+      <p>Your one-stop place for matches, players, stats & fan fun.</p>
+      <div class="hero-buttons">
+        <button onclick="scrollToSection('players')">Explore Players</button>
+        <button onclick="scrollToSection('schedule')">View Schedule</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAYERS -->
+  <section id="players" class="players-section">
+    <h2>Team Players</h2>
+    <div class="players-grid">
+
+      <div class="player-card">
+        <img src="https://documents.iplt20.com/ipl/IPLHeadshot2024/102.png" alt="Ruturaj Gaikwad">
+        <h3>Ruturaj Gaikwad</h3>
+        <p>Top-order Batsman</p>
+      </div>
+
+      <div class="player-card">
+        <img src="https://wallpaperaccess.com/full/9244447.png" alt="Ravindra Jadeja">
+        <h3>Ravindra Jadeja</h3>
+        <p>All-rounder</p>
+      </div>
+
+      <div class="player-card">
+        <img src="https://documents.iplt20.com/ipl/IPLHeadshot2024/1014.png" alt="Matheesha Pathirana">
+        <h3>Matheesha Pathirana</h3>
+        <p>Pacer</p>
+      </div>
+
+      <div class="player-card">
+        <img src="https://studybizz.com/sports/wp-content/uploads/2023/12/image-73.png" alt="MS Dhoni">
+        <h3>MS Dhoni</h3>
+        <p>WK & Captain</p>
+      </div>
+
+      <div class="player-card">
+        <img src="https://documents.iplt20.com/ipl/IPLHeadshot2022/5431.png" alt="Shivam Dube">
+        <h3>Shivam Dube</h3>
+        <p>All-Rounder</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule" class="schedule-section">
+    <h2>Match Schedule (Sample)</h2>
+    <table>
+      <thead>
+        <tr><th>Date</th><th>Opponent</th><th>Venue</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>14 April 2025</td><td>MI</td><td>Mumbai</td></tr>
+        <tr><td>19 April 2025</td><td>RCB</td><td>Chennai</td></tr>
+        <tr><td>24 April 2025</td><td>KKR</td><td>Kolkata</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news" class="news-section">
+    <h2>Latest News</h2>
+    <div class="news-grid">
+      <article class="news-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.pe24S1t-iEOz8cyBnLdKNQHaFj?cb=ucfimg2&ucfimg=1&w=1600&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3" alt="CSK win">
+        <h3>CSK Clinches Last-Over Thriller!</h3>
+        <p>Ruturaj Gaikwad's brilliant 82* led CSK to an incredible chase in the final over.</p>
+      </article>
+
+      <article class="news-card">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/2387/1738849732387-h" alt="Jadeja performance">
+        <h3>Jadeja’s All-Round Magic</h3>
+        <p>Ravindra Jadeja delivered a match-winning performance with both bat and ball.</p>
+      </article>
+
+      <article class="news-card">
+        <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop_webp/s3/2025-03/GettyImages-2206689797.jpg.webp?itok=kWKMtEcU" alt="MS Dhoni">
+        <h3>MS Dhoni Returns With Classic Finisher</h3>
+        <p>The Captain smashed 22*(9) in vintage style at Chepauk.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats" class="stats-section">
+    <h2>Team Statistics</h2>
+    <div class="stats-cards">
+      <div class="stat-card">
+        <h3 id="total-matches">0</h3><p>Matches Played</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="total-wins">0</h3><p>Wins</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="total-runs">0</h3><p>Total Runs</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="total-wickets">0</h3><p>Total Wickets</p>
+      </div>
+    </div>
+
+    <div class="chart-wrapper">
+      <canvas id="runsChart" width="900" height="320" aria-label="Runs per season chart"></canvas>
+      <p class="chart-note">Runs per season (sample data)</p>
+    </div>
+  </section>
+
+  <!-- POLL -->
+  <section id="poll" class="poll-section">
+    <h2>Fan Poll</h2>
+    <p class="poll-question" id="poll-question">Who is the CSK Player of the Season?</p>
+    <div class="poll-options" role="radiogroup" aria-labelledby="poll-question">
+      <button class="poll-btn" data-option="MS Dhoni">MS Dhoni</button>
+      <button class="poll-btn" data-option="Ruturaj Gaikwad">Ruturaj Gaikwad</button>
+      <button class="poll-btn" data-option="Ravindra Jadeja">Ravindra Jadeja</button>
+      <button class="poll-btn" data-option="Matheesha Pathirana">Matheesha Pathirana</button>
+    </div>
+    <div id="poll-results" class="poll-results" aria-live="polite"></div>
+  </section>
+
+  <!-- FORUM / COMMENTS -->
+  <section id="forum" class="forum-section">
+    <h2>Fan Forum</h2>
+    <form id="commentForm" class="comment-form" aria-label="Post a comment">
+      <input type="text" id="commenterName" placeholder="Your name" required />
+      <textarea id="commentText" placeholder="Share your thoughts..." rows="3" required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+    <div id="commentsList" class="comments-list" aria-live="polite"></div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section id="social" class="social-section">
+    <h2>Social</h2>
+    <div class="share-row">
+      <span>Share this team:</span>
+      <a id="shareTwitter" target="_blank" rel="noopener">Share on X</a>
+      <a id="shareFacebook" target="_blank" rel="noopener">Share on Facebook</a>
+    </div>
+
+    <h3>Latest Fan Posts</h3>
+    <div id="socialFeed" class="social-feed"></div>
+    <button id="loadMoreFeed" class="load-more">Load more</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Built with ❤️ for the Yellow Army — Sample project for internship / demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
